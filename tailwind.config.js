@@ -11,6 +11,10 @@ module.exports = {
 			colors: {
 				gray: colors.stone,
 			},
+			scale: {
+				105: "1.05",
+				125: "1.25",
+			},
 		},
 	},
 	plugins: [],
