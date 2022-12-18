@@ -1,10 +1,8 @@
+import FactionList from "../components/factionList"
 import Head from "next/head"
 import Image from "next/image"
-import { Inter } from "@next/font/google"
+import Layout from "../components/layout"
 import arcadiusImage from "../public/home/arcadius.png"
-import styles from "../styles/Home.module.css"
-
-const inter = Inter({ subsets: ["latin"] })
 
 export default function Home() {
 	return (
@@ -21,7 +19,7 @@ export default function Home() {
 				/>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
-			<main>
+			<main className="flex flex-col gap-16">
 				<div className="relative flex flex-col items-center justify-center h-screen bg-blend-darken">
 					<Image
 						className="absolute h-full w-full object-cover"
@@ -38,7 +36,9 @@ export default function Home() {
 						</p>
 					</div>
 				</div>
-				<div></div>
+				<Layout>
+					<FactionList />
+				</Layout>
 			</main>
 		</>
 	)
