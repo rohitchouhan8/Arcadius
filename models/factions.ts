@@ -21,7 +21,7 @@ import TechnomancersHomeImage from "../public/technomancers/home.png"
 import WildhuntArmyImage from "../public/wildhunt/army.png"
 import WildhuntHomeImage from "../public/wildhunt/home.png"
 
-export const factionById: Partial<Record<FactionId, Faction>> = {
+export const factionById: Record<FactionId, Faction> = {
 	[FactionId.ORDER_OF_RADIANT_SUN]: {
 		name: "Order of Radiant Sun",
 		description:
@@ -106,4 +106,8 @@ export const factionById: Partial<Record<FactionId, Faction>> = {
 		},
 		heroes: [HELIX],
 	},
+}
+
+export function getFactionById(factionId: FactionId): Faction {
+	return factionById[factionId]
 }
