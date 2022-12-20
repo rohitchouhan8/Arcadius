@@ -1,11 +1,19 @@
 import "../styles/globals.css"
 
 import type { AppProps } from "next/app"
+import { Josefin_Slab } from "@next/font/google"
+
+const josefinSlab = Josefin_Slab({
+	subsets: ["latin"],
+	variable: "--font-josefin-slab",
+})
 
 export default function App({ Component, pageProps }: AppProps) {
 	return (
-		<div className="font-serif text-gray-50 text-lg bg-gray-900">
+		<main
+			className={`${josefinSlab.variable} font-serif text-gray-300 text-lg bg-gray-900`}
+		>
 			<Component {...pageProps} />
-		</div>
+		</main>
 	)
 }

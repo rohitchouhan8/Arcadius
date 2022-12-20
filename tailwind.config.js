@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 const colors = require("tailwindcss/colors")
+const { fontFamily } = require("tailwindcss/defaultTheme")
 
 module.exports = {
 	content: [
@@ -14,6 +15,9 @@ module.exports = {
 			scale: {
 				105: "1.05",
 				125: "1.25",
+			},
+			fontFamily: {
+				serif: ["var(--font-josefin-slab)", ...fontFamily.serif],
 			},
 		},
 	},
