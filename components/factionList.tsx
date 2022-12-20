@@ -20,12 +20,12 @@ function FactionCard({ url, faction }: { url: string; faction: Faction }) {
 		>
 			<a href={`/${url}`}>
 				<Image
-					className='absolute object-cover scale-105 group-hover:scale-110 transition-all duration-300 ease-linear -top-8'
+					className='absolute h-full w-full object-cover object-top group-hover:scale-110 transition-all duration-300 ease-linear'
 					src={faction.armyImage.data}
 					alt={faction.armyImage.alt}
 				/>
 				<div className='absolute w-full h-full bg-gradient-to-t from-gray-900 to-transparent opacity-60'></div>
-				<div className='absolute bottom-8 left-8 border border-gray-50 p-2'>
+				<div className='absolute bottom-8 md:left-8 md:right-auto left-0 right-0 mx-2 border border-gray-50 p-2 flex justify-center'>
 					<h2 className='font-semibold'>{faction.name}</h2>
 				</div>
 			</a>

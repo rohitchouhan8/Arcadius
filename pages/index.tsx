@@ -27,7 +27,7 @@ export default function Home() {
 						alt='Arcadius'
 					/>
 					<div className='absolute h-full w-full bg-gradient-to-b from-transparent via-gray-900 to-transparent opacity-50'></div>
-					<div className='flex flex-col justify-center items-center gap-8 max-w-2xl z-10'>
+					<div className='flex flex-col justify-center items-center gap-8 max-w-2xl z-10 px-4'>
 						<h1 className='text-6xl font-bold text-white'>
 							Arcadius
 						</h1>

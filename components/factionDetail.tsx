@@ -41,8 +41,8 @@ export default function FactionDetail({ faction }: { faction: Faction }) {
 						const { description, image, name, stats } = hero
 						return (
 							<div key={name} className={"flex flex-col gap-4"}>
-								<div className='grid grid-cols-2 gap-4'>
-									<div className='relative flex flex-col gap-4 self-stretch overflow-clip rounded-xl bg-gray-400 justify-end'>
+								<div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
+									<div className='relative flex flex-col gap-4 self-stretch h-64 md:h-full overflow-clip rounded-xl bg-gray-400 justify-end'>
 										<Image
 											className='absolute w-full h-full object-cover'
 											src={image.data}
