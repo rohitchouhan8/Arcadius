@@ -3,7 +3,7 @@ import { StaticImageData } from "next/image"
 export const statValues = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 export type StatValue = typeof statValues[number]
 
-export type Stats = {
+export interface Stats {
 	strength: StatValue
 	endurance: StatValue
 	defense: StatValue

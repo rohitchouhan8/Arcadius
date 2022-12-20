@@ -154,3 +154,21 @@ Within the Technomancers, Helix quickly made a name for himself with his excepti
 	},
 	faction: FactionId.TECHNOMANCERS,
 }
+
+export const HEROES_BY_FACTION: Record<FactionId, Hero[]> = {
+	[FactionId.SHADOWCLAW_CLAN]: [NIGHTSHADE],
+	[FactionId.IRONFIST_LEGION]: [THUNDERFIST],
+	[FactionId.WILDHUNT]: [MOONFIRE],
+	[FactionId.ARCANE_ACADEMY]: [ARCHMAGUS],
+	[FactionId.TECHNOMANCERS]: [HELIX],
+	[FactionId.ORDER_OF_RADIANT_SUN]: [SERAPHINA],
+}
+
+export const ALL_HEROES: Hero[] = [
+	NIGHTSHADE,
+	THUNDERFIST,
+	MOONFIRE,
+	ARCHMAGUS,
+	HELIX,
+	SERAPHINA,
+]
