@@ -32,4 +32,13 @@ describe("All heroes", () => {
 			expect(average).toBeLessThanOrEqual(median + 1)
 		})
 	})
+
+	test("should have valid stats", () => {
+		ALL_HEROES.forEach((hero) => {
+			Object.values(hero.stats).forEach((stat) => {
+				expect(stat).toBeGreaterThanOrEqual(1)
+				expect(stat).toBeLessThanOrEqual(10)
+			})
+		})
+	})
 })
