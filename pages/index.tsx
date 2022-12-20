@@ -26,10 +26,13 @@ export default function Home() {
 						src={arcadiusImage}
 						alt='Arcadius'
 					/>
+					<div className='absolute h-full w-full bg-gradient-to-b from-transparent via-gray-900 to-transparent opacity-50'></div>
 					<div className='flex flex-col justify-center items-center gap-8 max-w-2xl z-10'>
-						<h1 className='text-6xl font-semibold'>Arcadius</h1>
-						<p>
-							a place of idyllic beauty and perfect happiness. It
+						<h1 className='text-6xl font-bold text-white'>
+							Arcadius
+						</h1>
+						<p className='text-gray-50 text-xl'>
+							A place of idyllic beauty and perfect happiness. It
 							is a world of magic and wonder, where ancient powers
 							and modern technologies coexist and where the forces
 							of light and darkness are constantly at odds.

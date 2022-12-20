@@ -16,7 +16,7 @@ export default function FactionList() {
 function FactionCard({ url, faction }: { url: string; faction: Faction }) {
 	return (
 		<li
-			className={`w-full relative h-64 group overflow-clip border-8 shadow-inner border-gray-700`}
+			className={`w-full relative h-64 group overflow-clip border border-gray-600`}
 		>
 			<a href={`/${url}`}>
 				<Image
