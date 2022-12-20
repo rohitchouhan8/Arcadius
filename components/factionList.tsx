@@ -1,5 +1,6 @@
 import { Faction } from "../models/types"
 import Image from "next/image"
+import Link from "next/link"
 import React from "react"
 import { factionById } from "../models/factions"
 
@@ -18,7 +19,7 @@ function FactionCard({ url, faction }: { url: string; faction: Faction }) {
 		<li
 			className={`w-full relative h-64 group overflow-clip border border-gray-600`}
 		>
-			<a href={`/${url}`}>
+			<Link href={`/${url}`}>
 				<Image
 					className='absolute h-full w-full object-cover object-top group-hover:scale-110 transition-all duration-300 ease-linear'
 					src={faction.armyImage.data}
@@ -28,7 +29,7 @@ function FactionCard({ url, faction }: { url: string; faction: Faction }) {
 				<div className='absolute bottom-8 md:left-8 md:right-auto left-0 right-0 mx-2 border border-gray-50 p-2 flex justify-center'>
 					<h2 className='font-semibold'>{faction.name}</h2>
 				</div>
-			</a>
+			</Link>
 		</li>
 	)
 }
