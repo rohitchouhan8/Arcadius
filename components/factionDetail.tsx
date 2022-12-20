@@ -77,7 +77,10 @@ export default function FactionDetail({ faction }: { faction: Faction }) {
 													return "bg-yellow-400"
 												}
 												return (
-													<div className='flex flex-col'>
+													<div
+														key={key}
+														className='flex flex-col'
+													>
 														<label className='text-gray-500'>
 															{key.toUpperCase()}{" "}
 															<span className='text-gray-50'>
@@ -102,8 +105,8 @@ export default function FactionDetail({ faction }: { faction: Faction }) {
 									</div>
 								</div>
 								<div className='flex flex-col gap-1'>
-									{description.split("\n").map((t) => (
-										<p>{t}</p>
+									{description.split("\n").map((t, i) => (
+										<p key={i}>{t}</p>
 									))}
 								</div>
 							</div>
